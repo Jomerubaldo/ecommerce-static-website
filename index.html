@@ -1,43 +1,161 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <title>Ecommerce</title>
-</head>
-<body class=" h-screen bg-[url('images/jacket.avif')] bg-no-repeat bg-center bg-cover"> <!--possible error is this so fix it-->
-  <div class="bg-[#fff] fixed w-full z-999 h-23">
-    <h1 class="font-bold relative left-10 top-4 text-[5vh]">LOGO</h1>
-    <nav>
-    <ul class="flex gap-10 relative left-50 bottom-5">
-      <li><a href="#">Shop</a></li>
-      <li><a href="#">On Sale</a></li>
-      <li><a href="#">New Arrivals</a></li>
-      <li><a href="#">Brands</a></li>
-    </ul>
-    <div class=" float-end relative bottom-13 right-[200px] border-none w-180 rounded-3xl p-2 bg-[#CECECE]">
-      <input class=" relative left-5 w-full" type="text" placeholder="Search for products...">
-    </div>
-    <div class="float-end relative left-145 bottom-11">
-      <img src="\images\cart-icon.webp" alt="icon" width="40px" height="10px">
-    </div>
-    <div class="float-end relative left-170 bottom-12">
-      <img src="\images\icon-profile-removebg-preview.png" alt="icon" width="30px" height="10px">
-    </div>
-    </nav>
-    <h1 class="text-[10vh] m-10 pt-20">Make your passion be<br>there and make styles</h1>
-    <p  class="p-10 relative bottom-15">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore<br>et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrum exercitationem ullam<br>corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure<br>repr
-        ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint<br>obcaecat cupiditat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.
-      </p>
-      <div class="relative left-10 bottom-10">
-        <button class="border border-[#000] rounded-2xl p-2 bg-red-600 text-white" type="button">GET NOW</button>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Ecommerce</title>
+  </head>
+  <body class="bg-[#CECECE] w-screen">
+    <header class="top-0 fixed w-full z-999">
+      <nav>
+        <div class="bg-[#fff] h-22">
+        <h1 class="font-bold relative left-10 top-4 text-[5vh]">LOGO</h1>
+      <ul class="flex gap-10 relative left-50 bottom-5">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class=" float-end relative bottom-13 right-[200px] border-none w-180 rounded-3xl p-2 bg-[#CECECE]">
+        <input class=" relative w-full" type="text" placeholder="Search for products...">
       </div>
-  </div>
-  <footer>
-    <h1>weqweq<br>weq<br>weqw<br>eqweq<br>weqweq<br>weqwewww</h1> <!--error bugs need to fixed it-->
-  </footer>
-</body>
-</html>
+      <div class="float-end relative left-145 bottom-11">
+        <img src="\images\cart-icon.webp" alt="icon" width="40px" height="10px">
+      </div>
+      <div class="float-end relative left-170 bottom-12">
+        <img src="\images\icon-profile-removebg-preview.png" alt="icon" width="30px" height="10px">
+      </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+      <h1 class="text-[10vh] m-10 pt-20 font-serif">Time flies, but a good<br>watch makes it beautiful</h1>
+      <p class="relative p-5 bottom-15 left-6 font-sans">“Every single moment truly counts, and a great watch helps you make the absolute most<br>
+        of those precious moments. It's more than just a simple tool to tell time; it’s a powerful<br>
+        statement of style, precision, and purpose. Always wear your time well and live each<br>second with intention.”
+      </p>
+        <div class="relative left-10 bottom-15">
+          <button class="border border-[#000] rounded-3xl bg-[#000] text-white relative top-3 left-3 w-24 h-10" type="button">Get Now</button>
+        </div>
+        </section>
+    </main>
+    <div class="bg-blue-400">
+        <h1 class="text-center font-bold text-[3vw]">Recommended for you</h1><br><br>
+        <div class="flex justify-evenly">
+        <section class="flex-1 flex flex-col items-center text-center">
+          <img class="w-50" src="\images\417aced81cbf767969dc15f968ad710f.jpg" alt="watch1">    <!--good example this is need to continue-->
+          <h1 class="font-serif">Product Name</h1>
+          <p class="font-serif font-bold">$199.99</p>
+          </section>
+          <section class="flex-1 flex flex-col items-center text-center">
+          <img class="w-50" src="\images\417aced81cbf767969dc15f968ad710f.jpg" alt="watch2">
+          <h1 class="font-serif">Product Name</h1>
+          <p class="font-serif font-bold">$199.99</p>
+          </section>
+          <!--Option 2-->
+          <section class="flex flex-1 flex-col items-center text-center">
+          <img class="w-50" src="\images\9190ca00f7bbe244a4488d0c02b82c76.jpg" alt="watch3">
+          <h1 class="font-serif">Product Name</h1>
+          <p class="font-serif font-bold">$199.99</p>
+          </section>
+        </div>
+
+          <div class="flex justify-evenly">
+            <section class="flex flex-1 flex-col items-center text-center">
+          <img class="w-50" src="\images\50ee4a90175bbd13ff1f0af5b398c84a.jpg" alt="watch4">
+          <h1 class="font-serif">Product Name</h1>
+          <p class="font-serif font-bold">$199.99</p>
+            </section>
+            <section class="flex flex-1 flex-col items-center text-center">
+          <img class="w-50" src="\images\417aced81cbf767969dc15f968ad710f.jpg" alt="watch5">
+          <h1 class="font-serif">Product Name</h1>
+          <p class="font-serif font-bold">$199.99</p>
+            </section>
+            <section class="flex flex-1 flex-col items-center text-center">
+          <img class="w-50" src="\images\9190ca00f7bbe244a4488d0c02b82c76.jpg" alt="watch6">
+          <h1 class="font-serif">Product Name</h1>
+          <p class="font-serif font-bold">$199.99</p>
+            </section>
+          </div>
+
+          <div class="flex  justify-evenly">
+            <section class="flex flex-1 flex-col items-center text-center">
+          <img class="w-50" src="\images\0fc8371be7d4516b01365e38dbe23007.jpg" alt="watch7">
+          <h1 class="font-serif">Product Name</h1>
+          <p class="font-serif font-bold">$199.99</p>
+            </section>
+            <section class="flex flex-1 flex-col items-center text-1">
+          <img class="w-50" src="\images\d1b3a47bc156aa0ba5ee70f83c9a1392.jpg" alt="watch8">
+          <h1 class="font-serif">Product Name</h1>
+          <p class="font-serif font-bold">$199.99</p>
+            </section>
+            <section class="flex flex-1 flex-col items-center text-center">
+          <img class="w-50" src="\images\ff6dcff1b82ac6dc9434b0547e1da223.jpg" alt="watch9">
+          <h1 class="font-serif">Product Name</h1>
+          <p class="font-serif font-bold">$199.99</p>
+          </section>
+          </div>
+    </div>
+    <footer>
+      <div class="bg-black w-screen flex gap-50 space-y-2 pl-11 text-blue-50">
+        <ul>
+          <p class="font-bold">Help</p>
+          <li>
+            <a href="#1">Contact Us</a>
+          </li>
+          <li>
+            <a href="#2">FAQ</a>
+          </li>
+          <li>
+            <a href="#3">Accessibility</a>
+          </li>
+          <li>
+            <a href="#4">Customer Support</a>
+          </li>
+          <li>
+            <a href="#5">User Guides</a>
+          </li>
+        </ul>
+        <ul>
+          <p class="font-bold">About</p>
+          <li>
+            <a href="#1">Our Story</a>
+          </li>
+          <li>
+            <a href="#2">Mission</a>                                         <!--need to improve this footer add icons for social media-->
+          </li>
+          <li>
+            <a href="#3">Careers</a>
+          </li>
+          <li>
+            <a href="#4">Press</a>
+          </li>
+          <li>
+            <a href="#5">News</a>
+          </li>
+        </ul>
+        <ul>
+          <p class="font-bold">Service</p>
+          <li>
+            <a href="#1">Secure Payment</a>
+          </li>
+          <li>
+            <a href="#2">Custom Orders</a>
+          </li>
+          <li>
+            <a href="#3">Loyalty Program</a>
+          </li>
+          <li>
+            <a href="#4">Customer Support</a>
+          </li>
+          <li>
+            <a href="#5">Free Shipping</a>
+          </li>
+        </ul>
+        <p class="pt-15">Created By: Jomer Ubaldo</p>
+      </div>
+    </footer>
+  </body>
+  </html>
