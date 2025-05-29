@@ -6,31 +6,30 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Ecommerce</title>
   </head>
-
   <body>
-    <header class="bg-center bg-cover h-181 w-full" style="background-image: url('\images/background-watch.jpg');">
-      <nav class="top-0 fixed w-full z-9999">
-        <div class="bg-[#fff] h-22">
-        <h1 class="font-bold relative left-10 top-4 text-[5vh]">LOGO</h1>
-      <ul class="flex gap-10 relative left-50 bottom-5">
+    <header class="bg-center bg-cover h-screen w-screen" style="background-image: url('\images/background-watch.jpg');">
+      <nav class=" fixed w-full z-999">
+        <div class="bg-[#fff]">
+        <h1 class="font-bold relative left-10 top-3 text-[5vh]">LOGO</h1> <!--dont used vh for font size used a text-1xl to 9xl-->
+      <ul class="flex gap-10 relative left-50 bottom-6">
         <li><a href="#">Home</a></li>
         <li><a href="#">Shop</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <div class=" float-end relative bottom-13 right-[200px] border-none w-180 rounded-3xl p-2 bg-[#CECECE]">
+      <div class=" float-end relative bottom-14 right-[200px] border-none w-180 rounded-3xl p-2 bg-[#CECECE]">
         <input class=" relative w-full" type="text" placeholder="Search for products...">
       </div>
-      <div class="float-end relative left-145 bottom-11">
+      <div class="float-end relative left-145 bottom-13">
         <img src="\images\cart-icon.webp" alt="icon" width="40px" height="10px">
       </div>
-      <div class="float-end relative left-170 bottom-12">
+      <div class="float-end relative left-170 bottom-14">
         <img src="\images\icon-profile-removebg-preview.png" alt="icon" width="30px" height="10px">
       </div>
         </div>
       </nav>
       <section>
-      <h1 class="text-white text-[15vh] font-seri relative top-40 left-12 bottom-15">Time flies, but a good<br>watch makes it beautiful</h1>   <!--fix it-->
+      <h1 class="text-white text-8xl font-seri relative top-40 left-12 bottom-15">Time flies, but a good<br>watch makes it beautiful</h1>   <!--fix it-->
       <p class="text-white relative top-40 p-5 bottom-15 left-6 font-sans">“Every single moment truly counts, and a great watch helps you make the absolute most<br>
         of those precious moments. It's more than just a simple tool to tell time; it’s a powerful<br>
         statement of style, precision, and purpose. Always wear your time well and live each<br>second with intention.”
@@ -41,22 +40,22 @@
         </section>
     </header>
 
+
     <div class="bg-[#CECECE]">
         <h1 class="text-center font-bold text-[3vw]">Recommended for you</h1><br><br>
         <div class="flex justify-evenly">
         <section class="flex-1 flex flex-col items-center text-center">
-          <img class="w-50" src="\images\417aced81cbf767969dc15f968ad710f.jpg" alt="watch1">    <!--good example this is need to continue-->
+          <img class="w-50 grow" src="\images\417aced81cbf767969dc15f968ad710f.jpg" alt="watch1">    <!--good example this is need to continue-->
           <h1 class="font-serif">Product Name</h1>
           <p class="font-serif font-bold">$199.99</p>
           </section>
           <section class="flex-1 flex flex-col items-center text-center">
-          <img class="w-50" src="\images\417aced81cbf767969dc15f968ad710f.jpg" alt="watch2">
+          <img class="w-50 grow" src="\images\417aced81cbf767969dc15f968ad710f.jpg" alt="watch2">
           <h1 class="font-serif">Product Name</h1>
           <p class="font-serif font-bold">$199.99</p>
           </section>
-          <!--Option 2-->
           <section class="flex flex-1 flex-col items-center text-center">
-          <img class="w-50" src="\images\9190ca00f7bbe244a4488d0c02b82c76.jpg" alt="watch3">
+          <img class="w-50 grow" src="\images\9190ca00f7bbe244a4488d0c02b82c76.jpg" alt="watch3">
           <h1 class="font-serif">Product Name</h1>
           <p class="font-serif font-bold">$199.99</p>
           </section>
@@ -64,17 +63,17 @@
 
           <div class="flex justify-evenly">
             <section class="flex flex-1 flex-col items-center text-center">
-          <img class="w-50" src="\images\50ee4a90175bbd13ff1f0af5b398c84a.jpg" alt="watch4">
+          <img class="w-50 grow" src="\images\50ee4a90175bbd13ff1f0af5b398c84a.jpg" alt="watch4">
           <h1 class="font-serif">Product Name</h1>
           <p class="font-serif font-bold">$199.99</p>
             </section>
             <section class="flex flex-1 flex-col items-center text-center">
-          <img class="w-50" src="\images\417aced81cbf767969dc15f968ad710f.jpg" alt="watch5">
+          <img class="w-50 grow" src="\images\417aced81cbf767969dc15f968ad710f.jpg" alt="watch5"> <!--possible here-->
           <h1 class="font-serif">Product Name</h1>
           <p class="font-serif font-bold">$199.99</p>
             </section>
             <section class="flex flex-1 flex-col items-center text-center">
-          <img class="w-50" src="\images\9190ca00f7bbe244a4488d0c02b82c76.jpg" alt="watch6">
+          <img class="w-50 grow" src="\images\9190ca00f7bbe244a4488d0c02b82c76.jpg" alt="watch6">
           <h1 class="font-serif">Product Name</h1>
           <p class="font-serif font-bold">$199.99</p>
             </section>
@@ -82,22 +81,23 @@
 
           <div class="flex  justify-evenly">
             <section class="flex flex-1 flex-col items-center text-center">
-          <img class="w-50" src="\images\0fc8371be7d4516b01365e38dbe23007.jpg" alt="watch7">
-          <h1 class="font-serif">Product Name</h1>
-          <p class="font-serif font-bold">$199.99</p>
-            </section>
-            <section class="flex flex-1 flex-col items-center text-1">
-          <img class="w-50" src="\images\d1b3a47bc156aa0ba5ee70f83c9a1392.jpg" alt="watch8">
+          <img class="w-50 grow" src="\images\0fc8371be7d4516b01365e38dbe23007.jpg" alt="watch7">
           <h1 class="font-serif">Product Name</h1>
           <p class="font-serif font-bold">$199.99</p>
             </section>
             <section class="flex flex-1 flex-col items-center text-center">
-          <img class="w-50" src="\images\ff6dcff1b82ac6dc9434b0547e1da223.jpg" alt="watch9">
+          <img class="w-50 grow" src="\images\d1b3a47bc156aa0ba5ee70f83c9a1392.jpg" alt="watch8">
+          <h1 class="font-serif">Product Name</h1>
+          <p class="font-serif font-bold">$199.99</p>
+            </section>
+            <section class="flex flex-1 flex-col items-center text-center">
+          <img class="w-50 grow" src="\images\ff6dcff1b82ac6dc9434b0547e1da223.jpg" alt="watch9">
           <h1 class="font-serif">Product Name</h1>
           <p class="font-serif font-bold">$199.99</p>
           </section>
           </div>
     </div>
+
     <footer>
       <div class="bg-black w-screen flex gap-50 space-y-2 pl-11 text-blue-50">
         <ul>
@@ -154,10 +154,10 @@
             <a href="#5">Free Shipping</a>
           </li>
         </ul>
+        <div>
         <p class="pt-10">Created By: Jomer Ubaldo</p>
-        <div">
-        <a href="https://www.facebook.com/ubaldo.jomer/about_contact_and_basic_info" target="_blank"><img class="relative top-18 right-85" src="\images\facebook-logo.png" alt="" width="30px" height=""></a>
-        <a href="https://github.com/Jomerubaldo" target="_blank"><img class="relative top-10 right-70" src="\images\github-logo1.png" alt="" width="30px" height=""></a>
+        <a href="https://www.facebook.com/ubaldo.jomer/about_contact_and_basic_info" target="_blank"><img class="relative left-10 top-1" src="\images\facebook-logo.png" alt="" width="30px" height=""></a>
+        <a href="https://github.com/Jomerubaldo" target="_blank"><img class="relative left-25  bottom-6" src="\images\github-logo1.png" alt="" width="30px" height=""></a>
       </div>
     </footer>
   </body>
